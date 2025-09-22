@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 00</title>
+</head>
+<body>
+    <h1>Compra de entradas para concierto</h1>
+    <p>
+        <ol>
+            <li>Desde un cliente, accedes a la web de venta de entradas y pulsas sobre el botón del concierto que quieres asistir.</li>
+            <li>Se lanza una consulta al servidor con la petición de la información del concierto.</li>
+            <li>En el servidor se hará una busqueda de las entradas vendidas / disponibles y devolverá el resultado al cliente.</li>
+            <li>En el cliente se mostrará el resultado de la petición, permitiendo seleccionar únicamente las disponibles.</li>
+            <li>Una vez seleccionadas y pulsando sobre comprar, enviará una nueva petición al servidor para "marcar" esas entradas como
+                "reservadas" para que durante un tiempo, unos 10 minutos por ejemplo, a otro cliente no le aparezcan disponibles y no 
+                pueda comprar las mismas, mientras completas el proceso de compra.
+            </li>
+            <li>En el cliente se comprobará si hay un login activo, de forma que si está activo te redigirá a la plataforma de pago, 
+                o si no está activo, te mostrará el formulario para que puedas introducir tu usuario / contraseña, o registrarte como 
+                nuevo usuario.
+            </li>
+            <li>Si introduces usuario y contraseña, se enviará una petición al servidor para buscar en la bbdd al usuario introducido, 
+                y en caso de que el usuario exista, comprobará si la contraseña es correcta.
+            </li>
+            <li>Si todo es correcto, devolverá la información del perfil del usuario y redigirá a la plataforma de pago.</li>
+            <li>En caso de que el usuario no exista o la contraseña no sea correcta, devolverá un error / aviso.</li>
+            <li>Si vas a registrarte como nuevo usuario, el cliente mostrará el formulario con los datos del perfil a completar y 
+                una vez completado y pulsado el botón correspondiente de registrar / enviar, enviará al servidor los datos recogidos 
+                del formulario, para crear una nueva entrada en la bbdd.
+            </li>
+            <li>Una vez creado el nuevo usuario en la bbdd, el servidor devolverá los datos del perfil al cliente, para que pueda 
+                completar el proceso de compra, redirigiéndolo a la plataforma de pago.
+            </li>
+            <li>Si durante este proceso a pasado más del tiempo estipulado, en este caso 10 minutos, o cierras el navegador, el cliente 
+                enviará una petición el servidor para "liberar" esa reserva de entradas y que vuelvan a estar disponible.
+            </li>
+        </ol>
+    </p>
+</body>
+</html>
